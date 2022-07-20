@@ -14,7 +14,7 @@ const Navbar = () => {
                     <li>Home</li>
                     <li>Learn</li>
                     <li>Code</li>
-                    <li>Tesmonials</li>
+                    <li>Testimonials</li>
                     <li>Login</li>
                 </ul>
             </div>

@@ -17,19 +17,24 @@ const Projects = () => {
   return (
     <div className='projects'>
         {/* Heading */}
-        <span>Recent Projects
-            <br/>
-            our students.
+        <span>RECENT PROJECTS FROM OUR STUDENTS
         </span>
+        <br/>
         <span>Projects</span>
+        <br/>
 
          {/* Slider */}
-         <Swiper>
+         <Swiper
+         spaceBetween={30}
+         slidesPerView={3}
+         grabCursor={true}
+         className='projects-slider'
+         >
             <SwiperSlide>
                 <img src={Project1} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={Project2} alt="" />
+                <img src={Project6} alt="" />
             </SwiperSlide>
             <SwiperSlide>
                 <img src={Project3} alt="" />
@@ -41,19 +46,19 @@ const Projects = () => {
                 <img src={Project5} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={Project6} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
-                <img src={Project7} alt="" />
-            </SwiperSlide>
-            <SwiperSlide>
                 <img src={Project8} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={Project10} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={Project2} alt="" />
             </SwiperSlide>
             <SwiperSlide>
                 <img src={Project9} alt="" />
             </SwiperSlide>
             <SwiperSlide>
-                <img src={Project10} alt="" />
+                <img src={Project7} alt="" />
             </SwiperSlide>
          </Swiper>
     

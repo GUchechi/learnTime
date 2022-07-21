@@ -20,7 +20,13 @@ const Projects = () => {
          {/* Slider */}
          <Swiper>
             <SwiperSlide>
-
+                <img src={Sidebar} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={Ecommerce} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+                <img src={HOC} alt="" />
             </SwiperSlide>
          </Swiper>
     

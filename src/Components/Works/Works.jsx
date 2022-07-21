@@ -1,60 +1,59 @@
 import React from 'react'
-import './Services.css'
+import './Works.css'
 import HeartEmoji from '../../img/heartemoji.png'
 import Glasses from '../../img/glasses.png'
 import Humble from '../../img/humble.png'
 import Card from '../Card/Card'
 
-const Services = () => {
+
+const Works = () => {
   return (
-    <div className='services'>
+    <div className='works'>
         {/* Left side */}
         <div className='awesome'>
-            <span>Our Awesome</span>
-            <span>Tech Courses</span>
-            <span>Acquire On Demand Tech Skills
+            <span>Non Tech</span>
+            <span>Courses</span>
+            <span>Acquire amazing Non-Tech Skills
                 <br/>              
              what are you waiting for?</span>
              <button className="button s-button">Start Learning</button>
         </div>
-
-        {/* Right side */}
-        <div className='cards'>
+         {/* Right side */}
+         <div className='cards'>
             <div style={{left:'14rem'}}>
-                <Card 
+                <Card
                 emoji = {HeartEmoji}
-                heading = {'Web-Development'}
-                detail = {"Acquire Skills in Frontend/Backend web development"}
+                heading = {'Product Management'}
+                detail = {"Acquire Skills in Product Management"}
                 />
             </div>  
             {/* Second card */}
             <div style={{top: "12rem", left: "-4rem"}}>
                 <Card
                  emoji={Glasses}
-                 heading = {"Mobile-Development"}
-                 detail = {"Acquire Skills in building top-notched applications"}
+                 heading = {"Project Management"}
+                 detail = {"Acquire Skills in Project Management"}
                 />
             </div>
             {/* Third card */}
             <div style={{top: "19rem", left: "13.9rem"}}>
                 <Card
                  emoji={Humble}
-                 heading = {"Data Science"}
-                 detail = {"Acquire skills in Data Science and Data Analysis"}
+                 heading = {"Digital Marketing"}
+                 detail = {"Acquire Skills in Digital Marketing"}
                 />
             </div>
             {/* Fouth Card */}
              <div style={{top: "12rem", left: "29rem"}}>
                 <Card
                  emoji={Glasses}
-                 heading = {"Cloud Computing"}
-                 detail = {"Acquire Skills in Cloud Architeture"}
+                 heading = {"Technical Writing"}
+                 detail = {"Acquire Skills in Technical Writing"}
                 />
             </div>
-
         </div>
     </div>
   )
 }
 
-export default Services
+export default Works

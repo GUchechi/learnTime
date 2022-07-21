@@ -38,8 +38,8 @@ const Intro = () => {
             <div style={{top: '-4%', left:'68%'}}>
                 <FloatingDiv image={Crown} txt1 ='Learn' txt2='Time'/>
             </div>
-            <div style={{top:'18rem', left: '0rem'}}>
-                <FloatingDiv  image={thumbup} txt1='Best Design' txt2='Award'/>
+            <div style={{top:'18rem', left: '1rem'}}>
+                <FloatingDiv  image={thumbup} txt1='Best In' txt2='Learning'/>
             </div>
         </div>
     </div>

@@ -12,12 +12,17 @@ import Project8 from '../../img/Project8.png'
 import Project9 from '../../img/Project9.png'
 import Project10 from '../../img/Project10.png'
 import 'swiper/css'
+import {themeContext} from '../../Context';
+import { useContext} from 'react'
+
 
 const Projects = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
     <div className='projects'>
         {/* Heading */}
-        <span>RECENT PROJECTS FROM OUR STUDENTS
+        <span style={{color: darkMode? "white" : ""}}>RECENT PROJECTS FROM OUR STUDENTS
         </span>
         <br/>
         <span>Projects</span>

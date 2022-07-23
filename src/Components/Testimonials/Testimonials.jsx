@@ -5,16 +5,20 @@ import Fiverr from '../../img/fiverr.png';
 import Amazon from '../../img/amazon.png';
 import Shopify from '../../img/Shopify.png';
 import Facebook from '../../img/Facebook.png';
+import {themeContext} from '../../Context';
+import { useContext} from 'react'
 
 const Testimonials = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
     <div className='testimonials'>
          {/* Left side */}
          <div className='awesome'>
-            <span>What they are</span>
+            <span style={{color: darkMode? "white" : ""}}>What they are</span>
             <span>Saying about us
             </span>
-            <span>
+            <span style={{color: darkMode? "white" : ""}}>
                 87% of our students are working 
                 <br />
                 with top Tech-companies

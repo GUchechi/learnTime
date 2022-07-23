@@ -10,15 +10,19 @@ import thumbup from '../../../img/thumbup.png'
 import Crown from '../../../img/crown.png'
 import glassesimogi from '../../../img/glassesimoji.png'
 import FloatingDiv from '../../FloatingDiv/FloatingDiv';
+import {themeContext} from '../../../Context';
+import { useContext} from 'react'
 
 const Intro = () => {
+    const theme = useContext(themeContext);
+    const darkMode = theme.state.darkMode;
   return (
     <div className="intro">
         <div className="i_left">
             <div className="i_name">
-                <span>Hello! It's learnTime</span>
-                <span>Not sure of where to start?</span>
-                <span>Learners around the world are acquiring new skills, launching new careers, advancing in their fields, and enriching their lives.
+                <span style={{color: darkMode? "white" : ""}}>Hello! It's learnTime</span>
+                <span >Not sure of where to start?</span>
+                <span style={{color: darkMode? "white" : ""}}>Learners around the world are acquiring new skills, launching new careers, advancing in their fields, and enriching their lives.
                 Enroll in learnTime today and, you can get the in-demand skills you need to help land a high-paying tech job. 
                 Here, you code with your mobile phone, you learn at your own pace, when and where it’s convenient for you. So what are you waiting for?
                 </span>

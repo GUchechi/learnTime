@@ -48,12 +48,21 @@ const Intro = () => {
                 src={glassesimogi} 
                 alt="" 
             />
-            <div style={{top: '-4%', left:'68%'}}>
+            <motion.div
+            initial={{top: '-4%', left:'74%'}}
+            whileInView={{left: '68%'}}
+            transition={{transition}}
+            
+            style={{top: '-4%', left:'68%'}}>
                 <FloatingDiv image={Crown} txt1 ='Learn' txt2='Time'/>
-            </div>
-            <div style={{top:'18rem', left: '1rem'}}>
+            </motion.div>
+            <motion.div 
+             initial={{top: '18rem', left:'9rem'}}
+             whileInView={{left: '0rem'}}
+             transition={{transition}}
+            style={{top:'18rem', left: '1rem'}}>
                 <FloatingDiv  image={thumbup} txt1='Best In' txt2='Learning'/>
-            </div>
+            </motion.div>
         </div>
     </div>
   )

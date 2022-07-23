@@ -12,8 +12,11 @@ import glassesimogi from '../../../img/glassesimoji.png'
 import FloatingDiv from '../../FloatingDiv/FloatingDiv';
 import {themeContext} from '../../../Context';
 import { useContext} from 'react'
+import {motion} from 'framer-motion'
 
 const Intro = () => {
+    const transition = {duration : 2, type: 'spring'}
+
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
   return (
@@ -38,7 +41,13 @@ const Intro = () => {
             <img src={Vector1} alt="" />
             <img src={Vector2} alt="" />
             <img src={boy} alt="" />
-            <img src={glassesimogi} alt="" />
+            <motion.img
+                initial={{left: '-36%'}}
+                whileInView= {{left: '-24%'}}
+                transition={transition}           
+                src={glassesimogi} 
+                alt="" 
+            />
             <div style={{top: '-4%', left:'68%'}}>
                 <FloatingDiv image={Crown} txt1 ='Learn' txt2='Time'/>
             </div>

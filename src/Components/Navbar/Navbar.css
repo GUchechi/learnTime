@@ -45,3 +45,12 @@
 .n_button {
     flex: 2;
 }
+
+@media screen and (max-width: 480px) {
+    .n_list{
+        display: none;
+    }
+    .n_button{
+        display: none;
+    }
+}

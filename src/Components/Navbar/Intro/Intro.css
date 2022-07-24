@@ -97,4 +97,19 @@
     left: -24%;
     border-radius: 50%;
     padding: 0;
-};
+}
+
+@media screen and (max-width: 480px) {
+    .intro{
+     flex-direction: column; 
+        height: 64rem;
+        gap: 5rem;
+    }
+    .i_right{
+        transform: scale(0.7 );
+        left: -3rem;
+    }
+    .floating-div:nth-last-of-type(2){
+        top: -8rem !important;
+    }
+}
